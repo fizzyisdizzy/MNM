@@ -1,13 +1,38 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="no-js" lang="">
     <head>
-        <meta charset="UTF-8" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}
+            {%  stylesheets
+                'bootstrap-master/dist/css/bootstrap.css'
+                'bootstrap-master/dist/css/bootstrap-theme.css'
+                filter='cssrewrite'
+            %}
+            <link rel="stylesheet" type="text/css" href="{{  asset_url }}">
+            {% endstylesheets %}
+        {% endblock %}
+        {% block headerScripts %}
+            {% javascripts
+                '../app/Resources/js/vendor/modernizr-latest.js'
+                '../app/Resources/js/vendor/jquery-2.1.1.js'
+                'bootstrap-master/dist/js/bootstrap.js'
+            %}
+            <script type="text/javascript" src="{{ asset_url }}"></script>
+            {% endjavascripts %}
+        {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+        <link rel="stylesheet" href="">
     </head>
     <body>
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
     </body>
+
 </html>

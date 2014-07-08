@@ -1,0 +1,4 @@
+mnm_common:
+    resource: "@MNMCommonBundle/Resources/config/routing.yml"
+    prefix:   /
+

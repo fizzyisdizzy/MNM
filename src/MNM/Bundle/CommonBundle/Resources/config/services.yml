@@ -1,0 +1,7 @@
+parameters:
+#    mnm_common.example.class: MNM\Bundle\CommonBundle\Example
+
+services:
+#    mnm_common.example:
+#        class: %mnm_common.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

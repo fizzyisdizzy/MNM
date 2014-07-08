@@ -1,3 +1,5 @@
+#OSX stupidness
+.DS_Store
 # Cache and logs
 /app/cache/*
 /app/logs/*
