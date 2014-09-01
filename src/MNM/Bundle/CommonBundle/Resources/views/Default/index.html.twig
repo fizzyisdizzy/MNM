@@ -1,41 +1,93 @@
 {% extends "base.html.twig" %}
-{% block title %}Homepage{% endblock %}
+{% block title %}Mosque Near Me{% endblock %}
 {% block body %}
-<div id="wrap">
-	<div class="jumbotron jumbotron-green">
-	   <div class="space">  
-		    <div class="container">
-		  		 <div class="row">
-					  <div class="col-md-4"><img src="/images/nearme.jpg"></div>
-					  <div class="col-md-4"><img src="/images/mosques.jpg"></div>
-					  <div class="col-md-4"><img src="/images/maps.jpg"></div>
-				  </div>
-				  <div class="row">
-					  <div class="col-md-4 text-center"><h3>Near Me</h3></div>
-					  <div class="col-md-4 text-center"><h3>Mosques</h3></div>
-					  <div class="col-md-4 text-center"><h3>Maps</h3></div>
-				  </div>
-			</div>
-	   </div>	
-	   
-	   <div class="text">
-			<div class="row">
-				<div class="col-md-12"><p class="lead text-center">This is a test</p></div>
-			</div>
-	 </div>
-</div>
-	 <div class="jumbotron jumbotron-white">
-	 	<h1 class="heading text-center">About Us</h1>
-              <div class="col-sm-4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel iaculis diam, eu iaculis tellus. Nunc consectetur, mauris condimentum feugiat fermentum, felis massa venenatis felis, porta vehicula sapien tortor vel arcu. Nullam sit amet imperdiet metus. Curabitur sed mi nec enim tincidunt commodo. Nullam auctor condimentum massa. Proin consectetur lorem quis est pharetra, id eleifend lorem venenatis. Fusce vitae massa scelerisque, congue nunc ac, molestie turpis.</p>
-              </div>
-              <div class="col-sm-4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel iaculis diam, eu iaculis tellus. Nunc consectetur, mauris condimentum feugiat fermentum, felis massa venenatis felis, porta vehicula sapien tortor vel arcu. Nullam sit amet imperdiet metus. Curabitur sed mi nec enim tincidunt commodo. Nullam auctor condimentum massa. Proin consectetur lorem quis est pharetra, id eleifend lorem venenatis. Fusce vitae massa scelerisque, congue nunc ac, molestie turpis.</p>
-              </div>
-              <div class="col-sm-4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel iaculis diam, eu iaculis tellus. Nunc consectetur, mauris condimentum feugiat fermentum, felis massa venenatis felis, porta vehicula sapien tortor vel arcu. Nullam sit amet imperdiet metus. Curabitur sed mi nec enim tincidunt commodo. Nullam auctor condimentum massa. Proin consectetur lorem quis est pharetra, id eleifend lorem venenatis. Fusce vitae massa scelerisque, congue nunc ac, molestie turpis.</p>
-              </div>
-	 </div>	
-  	
-   
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Mosque Near Me</h1>
+                        <p class="intro-text">Use our beautiful app to find a local mosque.<br>Or any other number of services.</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center about-section">
+        <div class="row">
+            <h2>About Mosque Near Me</h2>
+            <div class="col-md-4">
+                <i class="fa fa-microphone fa-5x"></i>
+                <p>Donec ut mauris semper, suscipit est vestibulum, convallis tellus. Vestibulum finibus tincidunt sem, vel feugiat quam condimentum id. Suspendisse imperdiet, leo in elementum porttitor, ante mi pharetra leo, non dapibus libero augue quis ante. Nulla finibus orci neque, eget blandit metus mattis vitae. Integer accumsan vestibulum fringilla. Vestibulum non tortor nibh. Aenean dignissim, tortor ac aliquam lacinia, leo mauris rutrum justo, in aliquet nunc arcu et lacus. Mauris commodo vulputate nunc sit amet imperdiet. Maecenas sed lobortis odio, feugiat dictum purus.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fa fa-map-marker fa-5x"></i>
+                <p>Donec ut mauris semper, suscipit est vestibulum, convallis tellus. Vestibulum finibus tincidunt sem, vel feugiat quam condimentum id. Suspendisse imperdiet, leo in elementum porttitor, ante mi pharetra leo, non dapibus libero augue quis ante. Nulla finibus orci neque, eget blandit metus mattis vitae. Integer accumsan vestibulum fringilla. Vestibulum non tortor nibh. Aenean dignissim, tortor ac aliquam lacinia, leo mauris rutrum justo, in aliquet nunc arcu et lacus. Mauris commodo vulputate nunc sit amet imperdiet. Maecenas sed lobortis odio, feugiat dictum purus.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="fa fa-bookmark-o fa-5x"></i>
+                <p>Donec ut mauris semper, suscipit est vestibulum, convallis tellus. Vestibulum finibus tincidunt sem, vel feugiat quam condimentum id. Suspendisse imperdiet, leo in elementum porttitor, ante mi pharetra leo, non dapibus libero augue quis ante. Nulla finibus orci neque, eget blandit metus mattis vitae. Integer accumsan vestibulum fringilla. Vestibulum non tortor nibh. Aenean dignissim, tortor ac aliquam lacinia, leo mauris rutrum justo, in aliquet nunc arcu et lacus. Mauris commodo vulputate nunc sit amet imperdiet. Maecenas sed lobortis odio, feugiat dictum purus.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="available" class="content-section text-center available-section">
+        <div class="container">
+            <h2>Get Mosque Near Me</h2>
+
+            <div class="col-md-4">
+                <i class="fa fa-html5 fa-5x"></i>
+                <h2>On the web</h2>
+                <p>Donec ut mauris semper, suscipit est vestibulum, convallis tellus. Vestibulum finibus tincidunt sem, vel feugiat quam condimentum id. Suspendisse imperdiet, leo in elementum porttitor, ante mi pharetra leo, non dapibus libero augue quis ante. Nulla finibus orci neque, eget blandit metus mattis vitae. Integer accumsan vestibulum fringilla. Vestibulum non tortor nibh. Aenean dignissim, tortor ac aliquam lacinia, leo mauris rutrum justo, in aliquet nunc arcu et lacus. Mauris commodo vulputate nunc sit amet imperdiet. Maecenas sed lobortis odio, feugiat dictum purus.</p>
+                <a class="btn default btn-lg"><i class="fa fa-download"></i> WebApp</a>
+            </div>
+            <div class="col-md-4">
+                <i class="fa fa-android fa-5x"></i>
+                <h2>Android</h2>
+                <p>Donec ut mauris semper, suscipit est vestibulum, convallis tellus. Vestibulum finibus tincidunt sem, vel feugiat quam condimentum id. Suspendisse imperdiet, leo in elementum porttitor, ante mi pharetra leo, non dapibus libero augue quis ante. Nulla finibus orci neque, eget blandit metus mattis vitae. Integer accumsan vestibulum fringilla. Vestibulum non tortor nibh. Aenean dignissim, tortor ac aliquam lacinia, leo mauris rutrum justo, in aliquet nunc arcu et lacus. Mauris commodo vulputate nunc sit amet imperdiet. Maecenas sed lobortis odio, feugiat dictum purus.</p>
+                <a class="btn default btn-lg"><i class="fa fa-download"></i> Playstore</a>
+
+            </div>
+            <div class="col-md-4">
+                <i class="fa fa-apple fa-5x"></i>
+                <h2>iOS</h2>
+                <p>Donec ut mauris semper, suscipit est vestibulum, convallis tellus. Vestibulum finibus tincidunt sem, vel feugiat quam condimentum id. Suspendisse imperdiet, leo in elementum porttitor, ante mi pharetra leo, non dapibus libero augue quis ante. Nulla finibus orci neque, eget blandit metus mattis vitae. Integer accumsan vestibulum fringilla. Vestibulum non tortor nibh. Aenean dignissim, tortor ac aliquam lacinia, leo mauris rutrum justo, in aliquet nunc arcu et lacus. Mauris commodo vulputate nunc sit amet imperdiet. Maecenas sed lobortis odio, feugiat dictum purus.</p>
+                <a class="btn default btn-lg"><i class="fa fa-download"></i> Appstore</a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact Us</h2>
+                <p>Feel free to contact us for feature requests, bug reports, or integration with our service.</p>
+                <p><a href="mailto:info@mosquenearme.com">info@mosquenearme.com</a>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a class="btn default btn-lg"><i class="fa fa-twitter fa-fw"></i> Twitter</a>
+                    </li>
+                    <li>
+                        <a class="btn default btn-lg"><i class="fa fa-facebook fa-fw"></i> Facebook</a>
+                    </li>
+                    <li>
+                        <a class="btn default btn-lg"><i class="fa fa-google-plus fa-fw"></i> Google +</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
 {% endblock %}
