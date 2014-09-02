@@ -17,3 +17,13 @@ $(function() {
         event.preventDefault();
     });
 });
+
+// Jquery Animation
+$(document).ready(function() {
+    $('.brand-heading').addClass('bounceIn animated')
+    $('.intro-text').addClass('fadeInUp animated').css('-webkit-animation-delay', '1s')
+    $('.btn').addClass('fadeIn animated').css('-webkit-animation-delay', '2s');
+});
+
+
+
